@@ -1,0 +1,10 @@
+{
+  "name": "@build-tracker/heroku",
+  "author": "Paul Armstrong <paul@spaceyak.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@build-tracker/plugin-with-postgres": "latest",
+    "@build-tracker/server": "latest"
+  }
+}
