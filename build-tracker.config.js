@@ -13,33 +13,34 @@ module.exports = withPostgres({
           maximum: 0.05,
         },
       ],
+      // Copying over existing bundlesize budgets
       "dist/extension-chrome/scripts/popup-bundle.js": [{
         level: BudgetLevel.WARN,
-        sizeKey: 'stat',
+        sizeKey: 'gzip',
         type: BudgetType.SIZE,
         maximum: 15000,
       }],
       "dist/lightrider/lighthouse-lr-bundle.js": [{
         level: BudgetLevel.WARN,
-        sizeKey: 'stat',
+        sizeKey: 'gzip',
         type: BudgetType.SIZE,
         maximum: 1500000,
       }],
       "dist/viewer/src/viewer.js": [{
         level: BudgetLevel.WARN,
-        sizeKey: 'stat',
+        sizeKey: 'gzip',
         type: BudgetType.SIZE,
         maximum: 65000,
       }],
       "dist/lighthouse-dt-bundle.js": [{
         level: BudgetLevel.WARN,
-        sizeKey: 'stat',
+        sizeKey: 'gzip',
         type: BudgetType.SIZE,
         maximum: 470000,
       }],
       "dist/lightrider/report-generator-bundle.js": [{
         level: BudgetLevel.WARN,
-        sizeKey: 'stat',
+        sizeKey: 'gzip',
         type: BudgetType.SIZE,
         maximum: 50000,
       }]
