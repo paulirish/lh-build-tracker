@@ -5,6 +5,6 @@
   "private": true,
   "dependencies": {
     "@paulirish/buildtracker-plugin-with-postgres": "latest",
-    "@build-tracker/server": "latest"
+    "@paulirish/build-tracker-server": "latest"
   }
 }
