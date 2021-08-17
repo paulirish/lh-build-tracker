@@ -49,7 +49,9 @@ module.exports = withPostgres({
   defaultBranch: process.env.BT_DEFAULT_BRANCH,
   pg: {
     connectionString: process.env.DATABASE_URL,
-    rejectUnauthorized: false,
+    ssl: {
+      rejectUnauthorized: false,  // i hated this bug. https://help.heroku.com/MDM23G46/why-am-i-getting-an-error-when-i-upgrade-to-pg-8
+    },
   },
   port: process.env.PORT,
   url: process.env.BT_URL,
