@@ -49,7 +49,7 @@ module.exports = withPostgres({
   defaultBranch: process.env.BT_DEFAULT_BRANCH,
   pg: {
     connectionString: process.env.DATABASE_URL,
-    ssl: true,
+    rejectUnauthorized: false,
   },
   port: process.env.PORT,
   url: process.env.BT_URL,
